@@ -1,0 +1,437 @@
+digraph g {
+	graph [nodesep=1 ranksep=2 splines=false]
+	edge [arrowhead=none color="#707070"]
+	subgraph cluster_input {
+		node [fillcolor="black:white" fontcolor=white shape=square style=filled]
+		color=white label="CNN Model Visualization
+
+
+
+Input Layer"
+		1 [label="Image
+ 20 x 20 pixels
+Grayscale" fontcolor=white]
+	}
+	conv_2 -> 2
+	1 -> conv_2
+	subgraph cluster_1 {
+		color="#5faad0" style=filled
+		conv_2 [label="Convolutional Layer
+Kernel Size: 5x5
+Filters: 20" shape=square]
+		2 [label="20
+Feature Maps" shape=square]
+	}
+	2 -> 3
+	subgraph cluster_2 {
+		color=white
+		3 [label="Max Pooling
+Pool Size: 2x2" fillcolor="#8e44ad" fontcolor=white style=filled]
+	}
+	conv_4 -> 4
+	3 -> conv_4
+	subgraph cluster_3 {
+		color="#5faad0" style=filled
+		conv_4 [label="Convolutional Layer
+Kernel Size: 5x5
+Filters: 50" shape=square]
+		4 [label="50
+Feature Maps" shape=square]
+	}
+	4 -> 5
+	subgraph cluster_4 {
+		color=white
+		5 [label="Max Pooling
+Pool Size: 2x2" fillcolor="#8e44ad" fontcolor=white style=filled]
+	}
+	5 -> 6
+	subgraph cluster_5 {
+		color=white
+		6 [label=Flattening fillcolor="#2c3e50" fontcolor=white shape=invtriangle style=filled]
+	}
+	6 -> 7
+	6 -> 8
+	6 -> 9
+	6 -> 10
+	6 -> 11
+	6 -> 12
+	6 -> 13
+	6 -> 14
+	6 -> 15
+	6 -> 16
+	subgraph cluster_6 {
+		color=white
+		rank=same
+		label=" (+502)" labeljust=right labelloc=b
+		7 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		8 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		9 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		10 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		11 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		12 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		13 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		14 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		15 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		16 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+	}
+	7 -> 17
+	8 -> 17
+	9 -> 17
+	10 -> 17
+	11 -> 17
+	12 -> 17
+	13 -> 17
+	14 -> 17
+	15 -> 17
+	16 -> 17
+	7 -> 18
+	8 -> 18
+	9 -> 18
+	10 -> 18
+	11 -> 18
+	12 -> 18
+	13 -> 18
+	14 -> 18
+	15 -> 18
+	16 -> 18
+	7 -> 19
+	8 -> 19
+	9 -> 19
+	10 -> 19
+	11 -> 19
+	12 -> 19
+	13 -> 19
+	14 -> 19
+	15 -> 19
+	16 -> 19
+	7 -> 20
+	8 -> 20
+	9 -> 20
+	10 -> 20
+	11 -> 20
+	12 -> 20
+	13 -> 20
+	14 -> 20
+	15 -> 20
+	16 -> 20
+	7 -> 21
+	8 -> 21
+	9 -> 21
+	10 -> 21
+	11 -> 21
+	12 -> 21
+	13 -> 21
+	14 -> 21
+	15 -> 21
+	16 -> 21
+	7 -> 22
+	8 -> 22
+	9 -> 22
+	10 -> 22
+	11 -> 22
+	12 -> 22
+	13 -> 22
+	14 -> 22
+	15 -> 22
+	16 -> 22
+	7 -> 23
+	8 -> 23
+	9 -> 23
+	10 -> 23
+	11 -> 23
+	12 -> 23
+	13 -> 23
+	14 -> 23
+	15 -> 23
+	16 -> 23
+	7 -> 24
+	8 -> 24
+	9 -> 24
+	10 -> 24
+	11 -> 24
+	12 -> 24
+	13 -> 24
+	14 -> 24
+	15 -> 24
+	16 -> 24
+	7 -> 25
+	8 -> 25
+	9 -> 25
+	10 -> 25
+	11 -> 25
+	12 -> 25
+	13 -> 25
+	14 -> 25
+	15 -> 25
+	16 -> 25
+	7 -> 26
+	8 -> 26
+	9 -> 26
+	10 -> 26
+	11 -> 26
+	12 -> 26
+	13 -> 26
+	14 -> 26
+	15 -> 26
+	16 -> 26
+	7 -> 27
+	8 -> 27
+	9 -> 27
+	10 -> 27
+	11 -> 27
+	12 -> 27
+	13 -> 27
+	14 -> 27
+	15 -> 27
+	16 -> 27
+	7 -> 28
+	8 -> 28
+	9 -> 28
+	10 -> 28
+	11 -> 28
+	12 -> 28
+	13 -> 28
+	14 -> 28
+	15 -> 28
+	16 -> 28
+	7 -> 29
+	8 -> 29
+	9 -> 29
+	10 -> 29
+	11 -> 29
+	12 -> 29
+	13 -> 29
+	14 -> 29
+	15 -> 29
+	16 -> 29
+	7 -> 30
+	8 -> 30
+	9 -> 30
+	10 -> 30
+	11 -> 30
+	12 -> 30
+	13 -> 30
+	14 -> 30
+	15 -> 30
+	16 -> 30
+	7 -> 31
+	8 -> 31
+	9 -> 31
+	10 -> 31
+	11 -> 31
+	12 -> 31
+	13 -> 31
+	14 -> 31
+	15 -> 31
+	16 -> 31
+	7 -> 32
+	8 -> 32
+	9 -> 32
+	10 -> 32
+	11 -> 32
+	12 -> 32
+	13 -> 32
+	14 -> 32
+	15 -> 32
+	16 -> 32
+	7 -> 33
+	8 -> 33
+	9 -> 33
+	10 -> 33
+	11 -> 33
+	12 -> 33
+	13 -> 33
+	14 -> 33
+	15 -> 33
+	16 -> 33
+	7 -> 34
+	8 -> 34
+	9 -> 34
+	10 -> 34
+	11 -> 34
+	12 -> 34
+	13 -> 34
+	14 -> 34
+	15 -> 34
+	16 -> 34
+	7 -> 35
+	8 -> 35
+	9 -> 35
+	10 -> 35
+	11 -> 35
+	12 -> 35
+	13 -> 35
+	14 -> 35
+	15 -> 35
+	16 -> 35
+	7 -> 36
+	8 -> 36
+	9 -> 36
+	10 -> 36
+	11 -> 36
+	12 -> 36
+	13 -> 36
+	14 -> 36
+	15 -> 36
+	16 -> 36
+	7 -> 37
+	8 -> 37
+	9 -> 37
+	10 -> 37
+	11 -> 37
+	12 -> 37
+	13 -> 37
+	14 -> 37
+	15 -> 37
+	16 -> 37
+	7 -> 38
+	8 -> 38
+	9 -> 38
+	10 -> 38
+	11 -> 38
+	12 -> 38
+	13 -> 38
+	14 -> 38
+	15 -> 38
+	16 -> 38
+	7 -> 39
+	8 -> 39
+	9 -> 39
+	10 -> 39
+	11 -> 39
+	12 -> 39
+	13 -> 39
+	14 -> 39
+	15 -> 39
+	16 -> 39
+	7 -> 40
+	8 -> 40
+	9 -> 40
+	10 -> 40
+	11 -> 40
+	12 -> 40
+	13 -> 40
+	14 -> 40
+	15 -> 40
+	16 -> 40
+	7 -> 41
+	8 -> 41
+	9 -> 41
+	10 -> 41
+	11 -> 41
+	12 -> 41
+	13 -> 41
+	14 -> 41
+	15 -> 41
+	16 -> 41
+	7 -> 42
+	8 -> 42
+	9 -> 42
+	10 -> 42
+	11 -> 42
+	12 -> 42
+	13 -> 42
+	14 -> 42
+	15 -> 42
+	16 -> 42
+	7 -> 43
+	8 -> 43
+	9 -> 43
+	10 -> 43
+	11 -> 43
+	12 -> 43
+	13 -> 43
+	14 -> 43
+	15 -> 43
+	16 -> 43
+	7 -> 44
+	8 -> 44
+	9 -> 44
+	10 -> 44
+	11 -> 44
+	12 -> 44
+	13 -> 44
+	14 -> 44
+	15 -> 44
+	16 -> 44
+	7 -> 45
+	8 -> 45
+	9 -> 45
+	10 -> 45
+	11 -> 45
+	12 -> 45
+	13 -> 45
+	14 -> 45
+	15 -> 45
+	16 -> 45
+	7 -> 46
+	8 -> 46
+	9 -> 46
+	10 -> 46
+	11 -> 46
+	12 -> 46
+	13 -> 46
+	14 -> 46
+	15 -> 46
+	16 -> 46
+	7 -> 47
+	8 -> 47
+	9 -> 47
+	10 -> 47
+	11 -> 47
+	12 -> 47
+	13 -> 47
+	14 -> 47
+	15 -> 47
+	16 -> 47
+	7 -> 48
+	8 -> 48
+	9 -> 48
+	10 -> 48
+	11 -> 48
+	12 -> 48
+	13 -> 48
+	14 -> 48
+	15 -> 48
+	16 -> 48
+	subgraph cluster_output {
+		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
+		color=white
+		rank=same
+		labeljust=1
+		17 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		18 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		19 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		20 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		21 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		22 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		23 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		24 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		25 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		26 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		27 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		28 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		29 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		30 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		31 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		32 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		33 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		34 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		35 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		36 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		37 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		38 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		39 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		40 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		41 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		42 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		43 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		44 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		45 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		46 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		47 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		48 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		label="Output Layer" labelloc=bottom
+	}
+	arrowShape=none
+}
