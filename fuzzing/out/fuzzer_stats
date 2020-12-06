@@ -1,0 +1,37 @@
+start_time        : 1607222505
+last_update       : 1607222567
+run_time          : 62
+fuzzer_pid        : 563855
+cycles_done       : 46
+cycles_wo_finds   : 32
+execs_done        : 347535
+execs_per_sec     : 5564.03
+execs_ps_last_min : 5225.97
+paths_total       : 4
+paths_favored     : 3
+paths_found       : 0
+paths_imported    : 0
+max_depth         : 1
+cur_path          : 2
+pending_favs      : 0
+pending_total     : 0
+variable_paths    : 0
+stability         : 100.00%
+bitmap_cvg        : 37.50%
+unique_crashes    : 2
+unique_hangs      : 0
+last_path         : 0
+last_crash        : 1607222508
+last_hang         : 0
+execs_since_crash : 326054
+exec_timeout      : 20
+slowest_exec_ms   : 0
+peak_rss_mb       : 0
+cpu_affinity      : 0
+edges_found       : 3
+var_byte_count    : 0
+havoc_expansion   : 3
+afl_banner        : vulnerable-program
+afl_version       : ++2.68c
+target_mode       : shmem_testcase default
+command_line      : afl-fuzz -i ./dat/afl_input -o ./out ./out/vulnerable-program

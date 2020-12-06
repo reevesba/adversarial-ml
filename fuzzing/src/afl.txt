@@ -1,0 +1,13 @@
+# American Fuzzy Lop
+# 12/5/2020
+# reevesbra@outlook.com
+
+# first, compile target program
+afl-clang-fast dat/vulnerable-program.c -o out/vulnerable-program
+
+# next, run afl
+afl-fuzz -i ./dat/afl_input -o ./out ./out/vulnerable-program
+
+# run program with a crash to see fault
+./out/vulnerable-program < out/crashes/id\:000000\,sig\:11\,src\:000000\,time\:370\,op\:havoc\,rep\:64
+
