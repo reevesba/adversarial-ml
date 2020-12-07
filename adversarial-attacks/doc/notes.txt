@@ -1,0 +1,13 @@
+Adversarial Machine Learning
+
+White Box Attacks
+# Paper: Explaining and Harnessing Adversarial Examples
+# python 3.8.6
+# foolbox 2.4.0
+# keras 2.4.3
+# tensorflow version: 2.3.1
+
+Clarif.ai
+# we can bring the accuracy down about 1% in just a few minutes
+
+
